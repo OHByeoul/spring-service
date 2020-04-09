@@ -135,4 +135,8 @@ gradle-app.setting
 ### Gradle Patch ###
 **/build/
 
+
+## oauth ignore
+application-oauth.properties
+
 # End of https://www.gitignore.io/api/java,gradle,intellij

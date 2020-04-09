@@ -22,18 +22,18 @@ var main = {
         };
 
         $.ajax({
-            type: 'POST',
-            url: '/api/v1/posts',
-            dataType: 'json',
-            contentType: 'application/json; charset=utf-8',
-            data: JSON.stringify(data)
-        }).done(function(){
-            alert('글이 등록됨');
-            location.href='/';
-        }).fail(function(error){
-            alert(JSON.stringify(error));
-        });
-    },
+                  type: 'POST',
+                  url: '/api/v1/posts',
+                  dataType: 'json',
+                  contentType: 'application/json; charset=utf-8',
+                  data: JSON.stringify(data)
+              }).done(function(result){
+                  alert('글이 등록됨'+result);
+                  location.href='/';
+              }).fail(function(error){
+                  alert(JSON.stringify(error));
+              });
+          },
 
     update : function () {
         var data = {
